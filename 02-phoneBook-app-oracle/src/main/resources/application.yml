@@ -1,0 +1,17 @@
+server:
+  port: 2222
+
+spring:  mvc:    view:      prefix: /view/
+      suffix: .jsp
+  datasource:    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: c##phonebook
+    password: vikas_123
+    
+  jpa:
+    hibernate:
+      ddl-auto: update 
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
